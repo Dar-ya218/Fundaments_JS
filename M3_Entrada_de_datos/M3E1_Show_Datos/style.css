@@ -1,0 +1,26 @@
+body{ background-color: #7fff00;
+color: rgb(17, 17, 89);
+}
+header { background-color: rgb(221, 255, 0);
+    color: black;
+    font-size: xx-large;
+    font-style: italic;
+
+}
+footer { background-color: rgba(238, 255, 0, 0.938);
+    color: darkslategray;
+
+}
+button { cursor: alias;
+    background-size: 0rem;
+    color: rgb(31, 9, 31);
+    background-color: darkgreen;
+
+}
+main {
+    background-color: #5eb308;
+    float: right;
+}
+div {color: rgb(8, 27, 9);
+
+}
