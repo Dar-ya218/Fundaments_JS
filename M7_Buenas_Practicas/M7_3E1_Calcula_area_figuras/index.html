@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M7_3E1</title>
+ <script src="index.js"></script>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calcula el área de figuras geométricas.</h1>
+ <h3> Square (costat * costat)
+    Triangulo (base* altura/2) <br>
+    Rectangulo (base * altura)
+    Circulo (Math.Pi * radio **2)</h3>
+    <h3>Escribe una figura que quieres calcular:</h3>
+    <input type="text" id="figure" placeholder="square/triangle/rectangle/circle">
+    <br>
+    <p>Escribe la altura o costado:</p>
+    <input type="text" id="altura" placeholder="altura">
+    <br>
+    <p>Escribe cuando hace de base:</p>
+    <br>
+    <input type="text" id="base" placeholder="base">
+    <p>Escribe radio, en caso si has elegido el costado:</p>
+    <br>
+    <input type="text" id="radius" placeholder="radius">
+    <br>
+    <br>
+    <button onclick="calculate()">Calcular</button>
+    <br>
+    <h2><p id="result"></p></h2>
+    
+</body>
+</html>
