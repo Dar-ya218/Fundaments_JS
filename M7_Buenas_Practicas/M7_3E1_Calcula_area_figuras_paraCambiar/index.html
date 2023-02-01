@@ -14,22 +14,23 @@
     Triangulo (base* altura/2) <br>
     Rectangulo (base * altura)
     Circulo (Math.Pi * radio **2)</h3>
-    
     <h3>Escribe una figura que quieres calcular:</h3>
     <input type="text" id="figure" placeholder="square/triangle/rectangle/circle">
     <br>
-    <p>Escribe la altura o costado:</p>
-    <input type="text" id="altura" placeholder="altura">
-    <br>
-    <p>Escribe cuando hace de base:</p>
-    <br>
-    <input type="text" id="base" placeholder="base">
-    <p>Escribe radio, en caso si has elegido el costado:</p>
-    <br>
-    <input type="text" id="radius" placeholder="radius">
     <br>
     <br>
     <button onclick="calculate()">Calcular</button>
+    <br>
+    <p>Escribe la altura o costado:</p>
+    <input type="text" id="altura" placeholder="altura" style="visibility: hidden;">
+    <br>
+    <p>Escribe cuando hace de base:</p>
+    <br>
+    <input type="text" id="base" placeholder="base" style="visibility: hidden;">
+    <p>Escribe radio, en caso si has elegido el costado:</p>
+    <br>
+    <input type="text" id="radius" placeholder="radius" style="visibility: hidden;" onclick="">
+    
     <br>
     <h2><p id="result"></p></h2>
     
