@@ -12,8 +12,7 @@ function myFunction() {
         console.log("palabras " + word)
         
         document.getElementById("result").innerHTML = `Las palabras que has introducido son: ${arrayWords}` 
-
-        alert("Las palabras introcucidas son: " + arrayWords);
-        
+    
     }
+    alert("Las palabras introcucidas son: " + arrayWords);
 }
