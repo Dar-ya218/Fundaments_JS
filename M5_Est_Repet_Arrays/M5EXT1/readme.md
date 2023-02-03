@@ -18,3 +18,13 @@ Y si la distancia entre el número a adivinar y el del usuario/a y si la distanc
 "Caliente, caliente: tu número es más grande " o "Caliente, caliente: tu número es más pequeño "
 
 El proceso termina cuando el usuario/a acierta.
+
+## html
+button to start
+
+## js
+function
+prompt bucle
+if 6
+imprimir resultado de pista
+si adivina imprimir resultado Felicidades!
