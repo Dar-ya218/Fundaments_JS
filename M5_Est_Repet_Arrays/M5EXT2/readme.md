@@ -21,3 +21,10 @@ La base será la división del número entre 2 : (5 / 2) + 1 = 3
 
 * * *
 
+## html
+input number
+button
+p id result
+
+## js
+
