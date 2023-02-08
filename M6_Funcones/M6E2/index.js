@@ -5,6 +5,7 @@ function askAge() {
     const secondUserAge = Number(document.getElementById("ageSecond").value);
     const thirdUserAge = Number(document.getElementById("ageThird").value);
     
+    
     const result = [firstUserAge, secondUserAge, thirdUserAge]
 
     return result
