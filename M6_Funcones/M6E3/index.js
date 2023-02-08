@@ -11,7 +11,7 @@ function searchNumber(number, arrayNumbers) {
 
     let result = -1
     for (let index = 0; index < arrayNumbers.length; index++) {
- 
+
         if (arrayNumbers[index] === number) {
             result = index
         }
@@ -19,14 +19,36 @@ function searchNumber(number, arrayNumbers) {
     return result
 }
 
+function converterPhrase() {
+
+    let userPhrase = document.getElementById("phraseUser").value;
+    console.log(userPhrase)
+
+    let resultPhrase1 = userPhrase.toLowerCase();
+    let resultPhrase2 = resultPhrase1.replace("!", "");
+    let resultPhrase3 = resultPhrase2.replace(" ", "");
+
+    alert(resultPhrase3)
+
+}
+function receiveArrayAndString() {
+    
+}
+
 function menu(id) { // cuando das al boton en html, que estan numerados
     if (id === 1) { // si es primero con numero 1, cumpe conla condicion de addDate()
         addDate()
     }
     if (id === 2) {
-        
-        const position = searchNumber(52, [9,52,1,47,85,8])
+        const position = searchNumber(number, [arreyNum])
         console.log(position)
+    }
+    if (id === 3) {
+        converterPhrase()
+    }
+    if (id ===4) {
+        
+        receiveArrayAndString()
     }
 
 }
