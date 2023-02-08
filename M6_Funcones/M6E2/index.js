@@ -5,9 +5,8 @@ function askAge() {
     const secondUserAge = Number(document.getElementById("ageSecond").value);
     const thirdUserAge = Number(document.getElementById("ageThird").value);
     
-    const validNum = validAge()
     const result = [firstUserAge, secondUserAge, thirdUserAge]
-    
+
     return result
 }
 
@@ -21,10 +20,4 @@ function calcucateAge() {
 function printResult(value) {
     
     document.getElementById("result").innerHTML = value
-}
-function validAge() {
-    const userNumbers = askAge()
-    if (userNumbers<0 || userNumbers>120) {
-        console.log( "Ha introducido un numero incorecto ")
-    }
 }
