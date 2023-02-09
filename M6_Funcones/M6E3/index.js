@@ -19,19 +19,16 @@ function searchNumber(number, arrayNumbers) {
     return result
 }
 
-function converterPhrase() {
-
-    let userPhrase = document.getElementById("phraseUser").value;
-    console.log(userPhrase)
+function converterPhrase(userPhrase) {
 
     let resultPhrase1 = userPhrase.toLowerCase();
-    let resultPhrase2 = resultPhrase1.replace("!", "");
-    let resultPhrase3 = resultPhrase2.replace(" ", "");
-
-    alert(resultPhrase3)
-
+    let resultPhrase2 = resultPhrase1.replaceAll("!", "");
+    let resultPhrase3 = resultPhrase2.replaceAll(" ", "");
+    let resultPhrase4 = resultPhrase3.replaceAll(".", "");
+    alert(resultPhrase4)
+    
 }
-function receiveArrayAndString() {
+function findSchoolSubject(array, subject) {
     
 }
 
@@ -44,11 +41,20 @@ function menu(id) { // cuando das al boton en html, que estan numerados
         console.log(position)
     }
     if (id === 3) {
-        converterPhrase()
+        let userPhrase = document.getElementById("phraseUser").value;
+        console.log(userPhrase)
+        converterPhrase(userPhrase)
     }
-    if (id ===4) {
-        
-        receiveArrayAndString()
+    if (id === 4) {
+
+        findSchoolSubject(
+            ['Historia universal',
+                'Historia de España',
+                'Geografía',
+                'Historia de la lengua catalana',
+                'Antropología',
+                'Inglés'],
+            "Historia")
     }
 
 }
