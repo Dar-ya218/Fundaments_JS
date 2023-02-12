@@ -1,26 +1,35 @@
-function calculate() {
-    let userNumber = Number(prompt("Ecribe un numero:"));
-    let isPrime = undefined
-    
-    for (let index = 2; index < userNumber; index++) {
-debugger
-        if (userNumber % index === 0) {
-            isPrime = false
-            //console.log (isPrime)
-            //return
-        }
+function run() {
+    let isPrime = false;
+    let text = "Ecribe un numero:";
 
-        else if (isPrime !== false) {
-            isPrime = true
-        }
-    }
-    //console.log (isPrime)
-    if (isPrime === true) {
-        document.getElementById("result").innerHTML = `El numero ${userNumber} es primo`
-    }
-    if (isPrime === false) {
+    do {
+        let userNumber = Number(prompt(text));
+        isPrime = isNumberPime(userNumber);
 
-        userNumber = prompt("Intentalo de nuevo: ")
-    }
-    //document.getElementById("result").innerHTML = `El numero ${userNumber} no es primo`
+        if (isPrime === true) {
+            document.getElementById("result").innerHTML = `El numero ${userNumber} es primo`
+        }
+        if (isPrime === false) {
+            text ="Intentalo de nuevo: "
+        }
+    } while (isPrime !== true);
 }
+
+function isNumberPime(n) {
+    if (n < 2) {
+      alert("Numero tiene que ser mayor que 1")
+      return false;
+    } else if (n === 2) {
+      return true;
+    }
+  
+    let i = 2;
+    const limit = Math.sqrt(n);
+    while (i <= limit) {
+      if (n % i === 0) {
+        return false;
+      }
+      i +=1;
+    }    
+    return true;
+  }
