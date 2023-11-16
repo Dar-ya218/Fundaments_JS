@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title>Tren with hamburgesa</title>
+</head>
+
+<body>
+    <div class="div_titl">
+        <h1 class="titl_1">Travel to Paris</h1>
+        <h2 class="titl_2">Do it with as!</h2>
+    </div>
+    <div class="body_colour">
+
+        <img class="div_body_img" src="./img/maravillas-desde-mi-pantalla-torre-eiffel-m.jpeg" alt="Torre Eiffel">
+   
+    <div class="hora-dropdown">
+        <p>Hora: </p>
+        <select id="hora-select" onchange="seleccionarHora()">
+            <option> 06:00</option>
+            <option> 13:00 </option>
+            <option> 19:00 </option>
+            <option> 20:40 </option>
+        </select>
+    </div>
+    </div>
+    <script>
+        function seleccionarHora() {
+            var seleccion = document.getElementById("hora-select");
+            var horaElegida = seleccion.options[seleccion.selectedIndex].value;
+            alert("Has seleccionado: " + horaElegida);
+        }
+    </script>
+     </div>
+</body>
+
+</html>

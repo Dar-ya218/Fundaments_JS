@@ -1,0 +1,47 @@
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.section { 
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.static {
+  background: rgb(16, 208, 208);
+  width: 100%;
+}
+
+.bg1::after {
+  background-image: url('img/por-que-cambia-de-color-el-agua-del-mar-ocean-azul-blue-caribe-1683963692927_768.webp');
+}
+
+.bg2::after {
+  background-image: url('img/Tortuga-marina-en-un-arrecife-de-coral-de-Hawai.jpeg');
+}
+h1{
+  font-size: 8;
+}
+p{
+  font-size: 2;
+}
